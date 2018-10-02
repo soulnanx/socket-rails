@@ -1,0 +1,30 @@
+<span>post shift </span>
+<hr>
+place: <input type="text" name="place" id="place">
+<br><br>
+category: <input type="text" name="category" id="category">
+<br><br>
+<button id="send">Send Shift</button>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		// RECEIVED MESSAGE
+		App.shift.received = function(data){
+			alert(data.message)
+		}
+
+		$("#send").click(function(){
+			var shift = new Object()
+
+			shift.place = $("#place").val()
+			shift.category = $("#category").val()
+
+
+			// SEND MESSAGE
+			App.shift.send_shift(shift)
+		})
+	})
+
+</script>
+
