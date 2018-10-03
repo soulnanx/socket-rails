@@ -7,6 +7,7 @@ App.shift = App.cable.subscriptions.create "ShiftChannel",
 
   received: (data) ->
     console.log("received")
+    console.log(data['message'])
 
   send_shift: (data) ->
     @perform 'send_shift', message:data
