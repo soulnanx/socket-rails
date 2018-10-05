@@ -1,24 +1,28 @@
-# README
+# Socket-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technologies
 
-Things you may want to cover:
+Commands to setup:
 
-* Ruby version
+```
+rake db:migrate
+rails s
+```
 
-* System dependencies
+**Create people (REST)**
+```
+http://ip:3000/people
+```
 
-* Configuration
+**Send shift (WEBSOCKET)**
+```
+http://ip:3000/
+```
 
-* Database creation
+## Technologies
 
-* Database initialization
 
-* How to run the test suite
+* Rails 5.2.1
+* Ruby 2.5.1p57
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
